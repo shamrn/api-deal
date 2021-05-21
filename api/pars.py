@@ -14,6 +14,7 @@ def pars_data(data):
     for row in data[1:]:
         try:
             row = row.split(',')
+            if row == ['']:continue
             name = row[0]
             count_sum = int(row[2]) * int(row[3])
             gems = row[1]
